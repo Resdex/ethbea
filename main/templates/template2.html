@@ -1,0 +1,71 @@
+<div class="w-full max-w-[400px] mx-auto flex flex-col h-screen overflow-hidden bg-[#f5f6fb]">
+    
+    <header class="flex justify-between items-center p-5 shrink-0">
+        <div class="flex items-center gap-1">
+             <img src="../main/dowod_files/orzelek.png" alt="Orzełek" class="h-9 w-auto">
+        </div>
+        <div class="flex items-center">
+            <img src="../main/dowod_files/chatbot.png" alt="Powiadomienia" class="h-6 w-auto cursor-pointer opacity-80 trigger-error">
+        </div>
+    </header>
+
+    <div class="flex-1 overflow-y-auto px-5 pb-6 flex flex-col">
+        <h2 class="text-[20px] font-bold tracking-tight mb-4 mt-2 shrink-0 text-[#1a1e22]">Dokumenty</h2>
+        
+        <a href="md.html" class="block w-full rounded-[24px] shadow-lg relative overflow-hidden active:scale-[0.98] transition-transform mb-5 shrink-0 bg-blue-600">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700"></div>
+            <img src="../main/dowod_files/cardbg1.svg" alt="" class="w-full h-auto block relative z-0 opacity-40">
+            
+            <div class="absolute inset-0 p-5 flex flex-col justify-between z-10">
+                <div class="flex justify-between items-start">
+                    <span class="text-white text-[18px] font-bold tracking-tight">mDowód</span>
+                    <img src="../main/dowod_files/godlo.png" alt="Godło" class="w-6 opacity-80">
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-16 rounded-lg bg-white/10 overflow-hidden border border-white/20">
+                        <img src="image.png" class="w-full h-full object-cover photo-bw">
+                    </div>
+                    <div class="flex flex-col text-white gap-0.5">
+                        <span class="text-[15px] font-bold uppercase leading-none">{{name}}</span>
+                        <span class="text-[15px] font-bold uppercase leading-none">{{surname}}</span>
+                        <div class="flex items-center gap-1 mt-1 opacity-80">
+                            <img src="../main/dowod_files/checkmark.svg" class="w-3 h-3 grayscale brightness-200">
+                            <span class="text-[10px] font-medium uppercase">Ważny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="shrink-0 flex justify-left mb-4">
+            <span class="text-blue-600 font-bold text-[14px] cursor-pointer py-2 px-4 rounded-full hover:bg-blue-50 transition-colors trigger-error">Dostosuj widok</span>
+        </div>
+
+        <div class="mt-auto pt-8 mb-2 flex justify-end">
+            <div class="bg-white px-5 py-3 rounded-full shadow-md border border-gray-100 flex items-center gap-2 active:scale-95 cursor-pointer transition-all trigger-error">
+                <span class="text-blue-600 text-[20px] font-bold leading-none mb-0.5">+</span>
+                <span class="text-[14px] font-bold tracking-tight text-[#1a1e22]">Dodaj dokument</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="shrink-0 border-t border-gray-200 bg-white px-4 py-3 flex justify-around items-center z-[90]">
+        <div class="flex flex-col items-center gap-1 w-1/4 cursor-pointer">
+            <img src="../main/dowod_files/dokuemnty.png" class="w-6 h-6">
+            <span class="text-[10px] font-bold text-blue-600">Dokumenty</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 w-1/4 opacity-50 cursor-pointer trigger-error">
+            <img src="../main/dowod_files/uslugi.png" class="w-6 h-6">
+            <span class="text-[10px] font-medium text-[#1a1e22]">Usługi</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 w-1/4 opacity-50 cursor-pointer trigger-error">
+            <img src="../main/dowod_files/kod_qr.png" class="w-6 h-6">
+            <span class="text-[10px] font-medium text-[#1a1e22]">Kod QR</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 w-1/4 cursor-pointer trigger-error">
+            <img src="../main/dowod_files/wiecej.png" class="w-6 h-6 opacity-50">
+            <span class="text-[10px] font-medium text-[#1a1e22] opacity-50">Więcej</span>
+        </div>
+    </nav>
+</div>

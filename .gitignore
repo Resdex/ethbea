@@ -1,0 +1,30 @@
+# --- ZALEŻNOŚCI (Bardzo ważne) ---
+# Nie wysyłamy tego folderu, bo waży setki MB. 
+# Inni pobiorą go komendą 'npm install'
+node_modules/
+package-lock.json
+package.json
+tailwind.config.js
+src/
+.gitatributes
+
+# --- PLIKI SYSTEMOWE ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- LOGI I PLIKI TYMCZASOWE ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# --- KONFIGURACJA IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- PLIKI BUDOWANIA (opcjonalnie) ---
+# Jeśli używasz folderu wyjściowego dla gotowej strony
+dist/
+build/

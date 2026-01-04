@@ -1,0 +1,19 @@
+const PERSON_DATA = {
+    name: "hubert",
+    surname: "kociniak",
+    birthDate: "16.12.2006",
+    pesel: "06321602957",
+    serialNumber: "FIG654875",
+    validDate: "11.09.2032",
+    issueDate: "11.09.2022",
+    fatherName: "andrzej",
+    motherName: "katarzyna",
+    familySurname: "kociniak",
+    sex: "mężczyzna",
+    fatherFamilySurname: "kociniak",
+    motherFamilySurname: "kowalska",
+    birthPlace: "lublin",
+    address: "ul. bogdanowicza 6<br>210-010 łęczna",
+    addressDate: "01.07.2025",
+    lastUpdate: "03.01.2026"
+};
