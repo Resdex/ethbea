@@ -2,11 +2,11 @@ const PERSON_DATA = {
     name: "Kasia",
     surname: "Kot",
     citizenship: "POLSKIE",
-    birthDate: "17.02.2008",
+    birthDate: " 20.01.2008",
     pesel: "08021712345",
     sex: "KOBIETA",
-    addressDate: "2025-01-07",
-    validDate: "2035-01-07",
+    addressDate: "2026-02-17",
+    validDate: "2036-02-17",
     serialNumber: "JDM696765",
     expiryDate: "2031-10-23",
     issueDate: "2025-01-07",
@@ -19,6 +19,6 @@ const PERSON_DATA = {
     birthPlace: "Lublin",
     address: "ul. Lubartowska 11 m. 5,<br>20-123 Lublin",
     registrationDate: "2025-01-07",
-    lastUpdate: "03.01.2026",
+    lastUpdate: "26.02.2026",
     password: "wMqRkR"
 };
