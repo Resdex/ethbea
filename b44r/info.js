@@ -1,5 +1,5 @@
 const PERSON_DATA = {
-    name: "Kasia",
+    name: "Katarzyna",
     surname: "Kot",
     citizenship: "POLSKIE",
     birthDate: " 20.01.2008",
