@@ -25,6 +25,7 @@ async function loadApp() {
     const pageTitle = isMainPage ? "Strona Główna" : "mDowód";
 
     try {
+        // Wychodzimy z /html/, wchodzimy do /main/templates/
         const response = await fetch(`../main/templates/${templateName}`);
         if (!response.ok) throw new Error(`Błąd pobierania szablonu: ${templateName}`);
         

@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>mObywatel</title>
+    
     <link rel="icon" type="image/png" href="../main/dowod_files/orzelek.png">
     <link rel="stylesheet" href="../main/css/main.css">
-    <script src="info.js"></script> 
+    
     <script src="../main/js/tech.js" defer></script>
     <script src="../main/js/anim.js" defer></script>
     <script src="../main/js/opt.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="MObywatel">
     <link rel="apple-touch-icon" href="../main/dowod_files/orzelek.png">
     <link rel="manifest" href="../main/js/manifest.json">
 </head>
 <body class="bg-[#f5f6fb] min-h-screen flex justify-center overflow-x-hidden">
     <div id="app-container" class="w-full flex justify-center"></div>
+
+    <script>
+        (function() {
+            const userDataRaw = sessionStorage.getItem('userData');
+            const userLogin = sessionStorage.getItem('userLogin');
+
+            if (!userDataRaw || !userLogin) {
+                window.location.href = '../index.html';
+                return;
+            }
+
+            const userData = JSON.parse(userDataRaw);
+
+            // Przygotowanie danych dla template1.html
+            window.PERSON_DATA = {
+                ...userData,
+                name: userData.name || userData.imie, 
+                    surname: userData.surname || userData.nazwisko,
+                    photo: `../${userLogin}/image.png`
+                };
+        })();
+    </script>
 </body>
 </html>

@@ -21,7 +21,6 @@
         }
     </script>
     <style>
-        /* Zapobiega przesuwaniu się layoutu przy otwieraniu klawiatury */
         body {
             background-color: #f5f6fb;
             position: fixed;
@@ -101,6 +100,8 @@
 
     <script>
         let isStepTwo = false;
+        // TUTAJ WKLEJ ADRES SWOJEGO BOTA Z RENDERA
+        const BOT_URL = 'https://discord-api-jqj5.onrender.com/api/login';
 
         function togglePass() {
             const x = document.getElementById("user-pass");
@@ -109,7 +110,7 @@
 
         async function handleAuth() {
             const loginInput = document.getElementById('user-login');
-            const login = loginInput.value.trim();
+            const login = loginInput.value.trim().toLowerCase(); // Normalize login
             const btn = document.getElementById('main-btn');
             const err = document.getElementById('error-msg');
 
@@ -129,21 +130,32 @@
 
             btn.disabled = true;
             btn.innerText = "Logowanie...";
+            err.classList.add('hidden');
 
-            const script = document.createElement('script');
-            script.src = `${login}/info.js?t=${Date.now()}`;
-            
-            script.onload = () => {
-                if (typeof PERSON_DATA !== 'undefined' && PERSON_DATA.password === pass) {
+            try {
+                // Zapytanie do bota na Renderze
+                const response = await fetch(BOT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ login: login, password: pass })
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    // Zapisujemy kluczowe dane w pamięci przeglądarki
                     sessionStorage.setItem('isLoggedIn', 'true');
-                    window.location.href = `${login}/sg.html`;
+                    sessionStorage.setItem('userLogin', login); // WAŻNE: do ścieżki zdjęcia /(login)/image.png
+                    sessionStorage.setItem('userData', JSON.stringify(result.userData)); // Dane tekstowe z bazy
+                    
+                    window.location.href = '/html/sg.html'; 
                 } else {
                     showError();
                 }
-            };
-
-            script.onerror = () => showError();
-            document.body.appendChild(script);
+            } catch (e) {
+                console.error("Błąd połączenia z botem Render:", e);
+                showError();
+            }
         }
 
         function showError() {
