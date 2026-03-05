@@ -40,7 +40,7 @@
     <div id="main-view" class="flex flex-col h-full fade-in-quick">
         <header class="flex justify-between items-center p-5 shrink-0">
             <img src="../main/dowod_files/orzelek.png" class="h-9 w-auto rounded-lg object-cover">
-            <img src="../main/dowod_files/chatbot.png" class="h-6 w-auto opacity-80" onclick="alert('Brak powiadomień')">
+            <img src="../main/dowod_files/C1_Info.svg" class="h-6 w-auto opacity-80" onclick="alert('Brak powiadomień')">
         </header>
 
         <div class="flex-1 overflow-y-auto no-scrollbar px-5 pb-24 flex flex-col">
@@ -96,60 +96,124 @@
             <p class="text-gray-500 text-[15px]">Zaznacz, które dokumenty chcesz dodać.</p>
         </div>
         
-        <div class="flex-1 overflow-y-auto no-scrollbar px-4 space-y-3 pb-52">
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#00a790]"></div>
-                <span class="font-bold text-[15px]">Legitymacja emeryta-rencisty</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-gradient-to-br from-[#8e44ad] to-[#e74c3c]"></div>
-                <div class="flex flex-col"><span class="font-bold text-[15px]">mPrawo jazdy</span><span class="text-[12px] text-gray-400">(również tymczasowe)</span></div>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#f39c12]"></div>
-                <span class="font-bold text-[15px]">Moje pojazdy</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#5d56d4]"></div>
-                <span class="font-bold text-[15px]">Karta Dużej Rodziny</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#2980b9]"></div>
-                <span class="font-bold text-[14px]">Legitymacja Ulgowych Usług Transportowych</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#1565c0]"></div>
-                <span class="font-bold text-[15px]">Legitymacja radcy prawnego</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#2e7d32]"></div>
-                <span class="font-bold text-[15px]">Legitymacja adwokacka</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-[#8ea4b8]"></div>
-                <span class="font-bold text-[15px]">Identyfikator komornika sądowego</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-gradient-to-r from-red-600 to-indigo-900"></div>
-                <span class="font-bold text-[15px]">Legitymacja inżyniera budownictwa</span>
-            </label>
-            <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
-                <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
-                <div class="doc-icon bg-gradient-to-r from-blue-400 to-green-300"></div>
-                <span class="font-bold text-[15px]">PWZ lekarza</span>
-            </label>
+<div class="flex-1 overflow-y-auto no-scrollbar px-4 space-y-3 pb-52">
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#00a790] flex items-center justify-center p-2">
+            <img src="dowod_files/IB002_Emeryt_card_mini.svg" class="w-full h-full object-contain" alt="">
         </div>
+        <span class="font-bold text-[15px]">Legitymacja emeryta-rencisty</span>
+    </label>
 
-        <div class="fixed bottom-[72px] left-0 right-0 mx-auto max-w-[400px] p-5 bg-white border-t z-[90]">
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-gradient-to-br from-[#8e44ad] to-[#e74c3c] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB003_PJ_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-bold text-[15px]">mPrawo jazdy</span>
+            <span class="text-[12px] text-gray-400">(również tymczasowe)</span>
+        </div>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#f39c12] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB004_mPojazd_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Moje pojazdy</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#5d56d4] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB005_KDR_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Karta Dużej Rodziny</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#2980b9] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB010_UUT_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[14px]">Legitymacja Ulgowych Usług Transportowych</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#1565c0] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB016_Legitymacja_radcy_prawnego_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Legitymacja radcy prawnego</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#2e7d32] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB008_LAdwokacka_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Legitymacja adwokacka</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#8ea4b8] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB021_Identyfikator_komornika_sadowego_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Identyfikator komornika sądowego</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-green-300 flex items-center justify-center p-2">
+            <img src="../dowod_files/IB014_PWZLekarz_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">PWZ lekarza</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-green-300 flex items-center justify-center p-2">
+            <img src="../dowod_files/IB015_PWZDentysta_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">PWZ lekarza dentysty</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-green-300 flex items-center justify-center p-2">
+            <img src="../dowod_files/IB012_PWZPielegniarka_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">PWZ pielęgniarki</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-green-300 flex items-center justify-center p-2">
+            <img src="../dowod_files/IB013_PWZPolozna_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">PWZ położnej</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#f1c40f] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB019_Legitymacja_Sluzbowa_Nauczyciela_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Legitymacja służbowa nauczyciela</span>
+    </label>
+
+    <label class="flex items-center gap-4 bg-white p-4 rounded-[20px] shadow-sm border border-gray-100 cursor-pointer">
+        <input type="checkbox" class="doc-checkbox w-6 h-6 rounded-md border-gray-300 text-blue-600">
+        <div class="doc-icon w-10 h-10 rounded-full bg-[#34495e] flex items-center justify-center p-2">
+            <img src="../dowod_files/IB023_Doradca_podatkowy_card_mini.svg" class="w-full h-full object-contain" alt="">
+        </div>
+        <span class="font-bold text-[15px]">Legitymacja doradcy podatkowego</span>
+    </label>
+</div>
+
+        <div class="fixed bottom-[55px] left-0 right-0 mx-auto max-w-[400px] p-5 bg-white border-t z-[80]">
             <button id="add-btn" class="w-full bg-[#e2e8f0] text-[#94a3b8] font-bold py-4 rounded-[18px]">Dodaj</button>
         </div>
     </div>
