@@ -37,7 +37,7 @@
                 ...userData,
                 name: userData.name || userData.imie, 
                     surname: userData.surname || userData.nazwisko,
-                    photo: `../${userLogin}/image.png`
+                    photo: `../${userLogin.toLowerCase()}/image.png`
                 };
         })();
     </script>
