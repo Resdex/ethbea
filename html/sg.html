@@ -12,6 +12,22 @@
     <script src="../main/js/anim.js" defer></script>
     <script src="../main/js/opt.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            var nodes = document.querySelectorAll('a');
+            for (var i = 0; i < nodes.length; i++) {
+                nodes[i].addEventListener('click', function(event) {
+                    event.preventDefault();
+                    window.location.href = this.getAttribute('href');
+                }, false);
+            }
+        }
+    </script>
+    <link rel="manifest" href="../manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="f5f6fb">
+    <link rel="apple-touch-icon" href="../main/dowod_files/icon.png">
+    <meta name="apple-mobile-web-app-title" content="mObywatel">
 </head>
 <body class="bg-[#f5f6fb] h-[100dvh] flex justify-center overflow-hidden">
     <div id="app-container" class="w-full h-full flex justify-center"></div>
