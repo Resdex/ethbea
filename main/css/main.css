@@ -1160,6 +1160,10 @@ img {
   border-width: 1px;
 }
 
+.border-\[1\.5px\] {
+  border-width: 1.5px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -1189,6 +1193,11 @@ img {
 
 .border-gray-300\/50 {
   border-color: rgb(209 213 219 / 0.5);
+}
+
+.border-\[\#165ef8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 94 248 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#0052a5\] {
