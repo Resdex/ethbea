@@ -38,7 +38,13 @@
             }
         }
     </script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+    </script>
     <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#f5f6fb">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="f5f6fb">
     <link rel="apple-touch-icon" href="../main/dowod_files/orzelek.png">
