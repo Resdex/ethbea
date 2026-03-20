@@ -2,7 +2,7 @@
   "name": "mObywatel",
   "short_name": "mObywatel",
   "description": "Aplikacja mObywatel",
-  "start_url": ".",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
@@ -10,8 +10,13 @@
   "theme_color": "#f5f6fb",
   "icons": [
     {
-      "src": "/main/dowod_files/192.webp",
+      "src": "main/dowod_files/192.webp",
       "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "main/dowod_files/192.webp",
+      "sizes": "512x512",
       "type": "image/webp"
     }
   ]
