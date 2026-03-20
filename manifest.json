@@ -3,6 +3,7 @@
   "short_name": "mObywatel",
   "description": "Aplikacja mObywatel",
   "start_url": "./index.html",
+  "id": "/ethbea/",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
@@ -15,7 +16,7 @@
       "type": "image/webp"
     },
     {
-      "src": "main/dowod_files/192.webp",
+      "src": "main/dowod_files/512.webp",
       "sizes": "512x512",
       "type": "image/webp"
     }
